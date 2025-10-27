@@ -1,4 +1,4 @@
-# 📊 Investment Risk Analysis with CrewAI Multi-Agent System
+# Investment Risk Analysis with CrewAI Multi-Agent System
 
 <div align="center">
 
@@ -12,13 +12,13 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This Jupyter notebook demonstrates a sophisticated multi-agent AI workflow for investment risk analysis and trading strategy development using the CrewAI framework. It employs multiple specialized AI agents, each with distinct roles, to collaboratively analyze market data, develop trading strategies, plan trade execution, and assess risks. The workflow is orchestrated by a Manager LLM, enabling dynamic, modular, and autonomous decision-making.
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ###  **Multi-Agent Collaboration**
 Four specialized agents (Data Analyst, Trading Strategy Developer, Trade Advisor, Risk Advisor) work together, each focusing on a specific aspect of the investment process.
@@ -37,7 +37,7 @@ Easily add new agents, tools, or tasks for more complex workflows.
 
 ---
 
-## 🔄 Workflow
+## Workflow
 
 ### 1.  **Setup & Installation**
 - Installs required packages: `crewai`, `crewai_tools`, `langchain_community`
@@ -145,14 +145,14 @@ While the proposed trading strategies for AAPL present various risks, implementi
 
 ## 🛠️ Technical Details
 
-### 🤖 Agents & Tools
+### Agents & Tools
 - **Agents:** Defined using CrewAI's `Agent` class, each with a role, goal, backstory, and toolset
 - **Tools:**
   - `SerperDevTool`: For real-time web search (requires SERPER API key)
   - `ScrapeWebsiteTool`: For extracting data from financial news and stock sites
 - **Manager LLM:** Uses OpenAI's GPT-3.5-turbo (or similar) to coordinate the workflow
 
-### 🎯 Task Orchestration
+### Task Orchestration
 - **Process Mode:** `Process.hierarchical` allows the Manager LLM to dynamically route outputs between agents and decide task order
 - **Inputs:**
   - `stock_selection`: e.g., 'AAPL', 'NVDA'
@@ -161,7 +161,7 @@ While the proposed trading strategies for AAPL present various risks, implementi
   - `trading_strategy_preference`: e.g., 'Day Trading', 'Swing Trading'
   - `news_impact_consideration`: Boolean
 
-### 📋 Requirements
+### Requirements
 -  Python 3.8+
 -  Jupyter Notebook or Google Colab
 -  Packages: `crewai`, `crewai_tools`, `langchain_community`, `openai`, `serper`
@@ -169,7 +169,7 @@ While the proposed trading strategies for AAPL present various risks, implementi
   - `OPENAI_API_KEY` (for LLM)  
   - `SERPER_API_KEY` (for web search)
 
-### 🚀 How to Run
+### How to Run
 1. Install dependencies (first cell of the notebook)
 2. Set your API keys (either in Colab `userdata` or as environment variables)
 3. Run all cells in order
@@ -177,14 +177,14 @@ While the proposed trading strategies for AAPL present various risks, implementi
 
 ---
 
-## 🎨 Customization
+## Customization
 - Add or modify agents for new roles (e.g., Compliance, Portfolio Optimization)
 - Change the LLM model or temperature for different creativity/rigor
 - Integrate additional data sources or tools as needed
 
 ---
 
-## 📚 References
+## References
 - [CrewAI Documentation](https://docs.crewai.com/)
 - [LangChain Community](https://python.langchain.com/)
 - [OpenAI API](https://platform.openai.com/docs/)
@@ -194,7 +194,7 @@ While the proposed trading strategies for AAPL present various risks, implementi
 
 ## 📄 License
 
-[MIT License] or specify your own.
+[MIT License]
 
 ---
 
